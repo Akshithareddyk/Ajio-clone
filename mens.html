@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Clothing</title>
+    <link rel="stylesheet" href="stylem.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <!-- Your header content here -->
+    </div>
+
+    <h1 class="page-title">Men's Clothing</h1>
+
+    <div class="main-content">
+        <!-- Sidebar (Filters) -->
+        <aside class="filters">
+            <h3>Category</h3>
+            <a href="#" data-filter="Shirts">Shirts</a>
+            <a href="#" data-filter="T-Shirts">T-Shirts</a>
+            <a href="#" data-filter="Jackets">Jackets</a>
+            <a href="#" data-filter="Jeans">Jeans</a>
+
+            <h3>Price</h3>
+            <input type="range" id="price-range" min="500" max="5000" step="500">
+            <p id="price-display">₹500 - ₹5000</p>
+
+            <h3>Brands</h3>
+            <label><input type="checkbox" class="brand-filter" value="Nike"> Nike</label><br>
+            <label><input type="checkbox" class="brand-filter" value="Adidas"> Adidas</label><br>
+            <label><input type="checkbox" class="brand-filter" value="Puma"> Puma</label><br>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="product-grid" id="product-grid">
+            <!-- Products will be inserted here dynamically -->
+        </section>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <div class="modal-details">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <p id="modal-reviews"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
